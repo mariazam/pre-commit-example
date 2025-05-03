@@ -21,3 +21,9 @@ repos:
         entry: powershell.exe -NoProfile -ExecutionPolicy Bypass -File pre-commit-hooks/pre-merge-commit.ps1
         language: system
         stages: [pre-merge-commit]
+      - id: pre-rebase
+        name: check pre rebase
+        entry: powershell.exe -NoProfile -ExecutionPolicy Bypass -File pre-commit-hooks/pre-rebase.ps1
+        language: system
+        stages: [pre-rebase]
+
